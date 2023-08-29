@@ -58,7 +58,7 @@
 import React, {useEffect, useState } from "react";
 import Slider from "react-slick";
 import data from "../slider/Data";
-import CarouselCard from "./carouselCard/carouselCard";
+import CarouselCard from "./carouselCard/CarouselCard";
 import line from "../../assets/line.png";
 import "./carousel.scss";
 
