@@ -22,17 +22,17 @@ const Franchise = () => {
 
     if (currentScrollY > prevScrollY) {
       // Scrolling down
-      if (currentScrollY > 2100) setActive(true);
-      if (currentScrollY > 2700) setActive2(true);
-      if (currentScrollY > 3100) setActive3(true);
+      if (currentScrollY > 3000) setActive(true);
+      if (currentScrollY > 3400) setActive2(true);
+      if (currentScrollY > 3700) setActive3(true);
       if (currentScrollY > 1900) setActive4(true);
       if (currentScrollY > 4100) setActive5(true);
     } else {
       // Scrolling up
       // if (currentScrollY <= 1800) setActive4(false);
-      if (currentScrollY <= 3100) setActive3(false);
-      if (currentScrollY <= 2700) setActive2(false);
-      if (currentScrollY <= 2100) setActive(false);
+      if (currentScrollY <= 3700) setActive3(false);
+      if (currentScrollY <= 3400) setActive2(false);
+      if (currentScrollY <= 3300) setActive(false);
     }
 
     setPrevScrollY(currentScrollY);
