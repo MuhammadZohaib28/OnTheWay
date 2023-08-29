@@ -1,7 +1,4 @@
 import check from "../assets/check.png";
-import { BsCheck } from "react-icons/bs";
-import image1 from "../assets/Enscape_2023-06-07-13-40-22_Enscape View 1.png";
-import image2 from "../assets/Enscape_2023-06-07-13-42-27.png";
 
 export const listdata = [
   {
@@ -25,14 +22,3 @@ export const listdata = [
     text: "walk out the store",
   },
 ];
-
-export const images = [
-    {
-        id:1,
-        image: image1
-    },
-    {
-        id:2,
-        image: image2
-    }
-]
