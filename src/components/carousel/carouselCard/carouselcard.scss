@@ -1,0 +1,60 @@
+.carouselcard{
+    width: 600px;
+    height: 650px;
+    border-radius: 0.4rem;
+    position: relative;
+    // display: flex;  
+    // gap: 21rem;
+    z-index: 999;
+
+
+    .container{
+        margin-right:13rem;
+        // border: 1px solid red;
+        position: absolute;
+        margin-top: 1rem;
+        z-index: 999;
+        
+        img{
+               width: 100%;
+               height: 100%;
+               border-radius: 0.4rem;
+               object-fit: contain;
+               z-index: 1;
+           }
+    }
+
+}
+
+
+
+@media (max-width:430px) {
+    .carouselcard{
+        width: 100%;
+        height: 100%;
+        border-radius: 0.4rem;
+        position: relative;
+        z-index: 999;
+    
+    
+        .container{
+            margin-right: 0rem;
+            // border: 1px solid red;
+            position: absolute;
+            margin-top: 1rem;
+            z-index: 999;
+            height: 340px;
+            width: 450px;
+
+            
+            img{
+                   width: 100%;
+                   height: 100%;
+                   border-radius: 0.4rem;
+                   object-fit: contain;
+                   z-index: 1;
+               }
+        }
+    
+    }
+}

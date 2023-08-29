@@ -1,0 +1,114 @@
+.carousel {
+  padding: 0rem;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  height: 70vh;
+
+  .carouselcontainer {
+    // border: 1px solid red;
+    width: 100%;
+
+    .carousel-arrow {
+      // border: 1px solid white;
+      color: aliceblue;
+      height: 2.5rem;
+      width: 2.5rem;
+      background-color: aliceblue;
+      position: absolute;
+      top: 17rem;
+
+      &.block {
+        // border: 3px solid seagreen;
+      }
+      &.carousel-next {
+        // border: 1px solid yellow;
+        // background-color: white;
+        position: absolute;
+        left: 3rem;
+        // bottom: 10rem;
+      }
+    }
+  }
+
+  .img {
+    height: 14rem;
+    width: 100%;
+    // border: 1px solid red;
+
+    position: absolute;
+    z-index: -1;
+    // transform: translateX(0);
+    transition: all ease 0.4s;
+
+    &.active {
+      // transform: translateX(-1rem);
+      transition: all ease 0.4s;
+    }
+  }
+}
+
+
+
+@media (max-width: 430px) {
+    .carousel {
+        padding: 0rem;
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        height: 50vh;
+        overflow: hidden;
+      
+        .carouselcontainer {
+        //   border: 1px solid red;
+          width: 100%;
+          height: 100%;
+      
+          .carousel-arrow {
+            // border: 1px solid white;
+            color: aliceblue;
+            height: 2.5rem;
+            width: 2.5rem;
+            background-color: seagreen;
+            position: absolute;
+            top: 21rem;
+            
+            .carousel-prev::before{
+                color: rgb(255, 0, 0);
+            }
+      
+            &.block {
+              // border: 3px solid seagreen;
+            }
+            &.carousel-next {
+              // border: 1px solid yellow;
+              // background-color: white;
+              position: absolute;
+              left: 3rem;
+              background-color: rgb(255, 111, 135);
+              // bottom: 10rem;
+            }
+          }
+        }
+      
+        .img {
+          height: 20rem;
+          width: 240%;
+        //   border: 1px solid red;
+          overflow: hidden;
+      
+          position: absolute;
+          z-index: -1;
+          top: 2rem;
+          // transform: translateX(0);
+          transition: all ease 1s;
+      
+          &.active {
+            overflow: hidden;
+            // transform: translateX(-1rem);
+            transition: all ease 1s;
+          }
+        }
+      }
+      
+}

@@ -1,0 +1,13 @@
+https://docs.google.com/forms/d/e/1FAIpQLSdLvdk2ODyKBW7m6BYAI6jWkmJM5eADR8T_yfzMAxdrNlAF2A/formResponse
+
+entry.1108767202=Name
+
+entry.1884782877=Email
+
+entry.1849509373=Message
+
+
+
+
+
+https://docs.google.com/forms/d/1tfJdklYAHR9JDmnmGcS36Q0Z3ACBlKhN77dMUPj2vwg/edit#responses

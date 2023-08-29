@@ -1,0 +1,354 @@
+.slider {
+  // border: 1px solid red;
+  padding: 5rem;
+  width: 100%;
+  position: relative;
+
+  .img {
+    height: 10rem;
+    width: 100%;
+    // position: absolute;
+    z-index: -1;
+    // transform: translateX(0);
+    transition: all ease 1.2s;
+    
+    
+    &.active {
+      // transform: translateX(10rem);
+      transition: all ease 1.2s;
+      
+
+    }
+  }
+
+  .container {
+    // border: 1px solid red;
+    width: 95%;
+    .imagecontainer {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      gap: 3rem;
+      margin-top: -15rem;
+      transition: all ease 1s;
+
+      .sliderimages.active {
+        transform: scale(1.1); /* Increase size of active image */
+      }
+    }
+    .sliderimages {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      margin: 2rem auto;
+      display: flex;
+      border-radius: 0.2rem;
+      // border: 1px solid seagreen;
+      object-fit: cover;
+      transition: all 2s ease;
+      position: relative;
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    top: 22rem;
+    left: 1rem;
+
+    span {
+      position: absolute;
+      height: 2.1rem;
+      width: 0.01rem;
+      background-color: aliceblue;
+      right: 3rem;
+    }
+
+    button {
+      background-color: seagreen;
+      z-index: 9999;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 2rem;
+      font-size: 2rem;
+      font-weight: 500;
+      color: rgb(255, 255, 255);
+    }
+
+    .slidericon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 810px) {
+  .slider {
+    // border: 1px solid red;
+    padding: 5rem 1rem;
+    width: 100%;
+    position: relative;
+
+    .img {
+      height: 9rem;
+      width: 100%;
+      z-index: -1;
+      transform: translateX(0);
+      transition: all ease 1.7s;
+
+      &.active {
+        transform: translateX(-10rem);
+        transition: all ease 1.7s;
+      }
+    }
+
+    .container {
+      // border: 1px solid red;
+      width: 30%;
+      .imagecontainer {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        gap: 3rem;
+        margin-top: -11.5rem;
+        transition: all ease 1s;
+        .sliderimages.active {
+          transform: scale(1.1); /* Increase size of active image */
+        }
+      }
+      .sliderimages {
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      top: 20rem;
+      left: 1rem;
+
+      span {
+        position: absolute;
+        height: 2.1rem;
+        width: 0.01rem;
+        background-color: aliceblue;
+        right: 3rem;
+      }
+
+      button {
+        background-color: seagreen;
+        z-index: 9999;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+      }
+
+      .slidericon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+@media (min-width:1199px) {
+  .slider {
+    // border: 1px solid red;
+    padding: 5rem;
+    width: 100%;
+    position: relative;
+    
+  
+    .img {
+      height: 14rem;
+      width: 100%;
+      
+   
+      // position: absolute;
+      z-index: -1;
+      // transform: translateX(0);
+      transition: all ease 1.2s;
+  
+      &.active {
+        // transform: translateX(-1rem);
+        transition: all ease 1.2s;
+      }
+    }
+  
+    .container {
+      
+      
+      width: 95%;
+      .imagecontainer {
+        // border: 1px solid red;
+        
+      
+        height: 200px;
+        width: 100%;
+        display: flex;
+        gap: 3rem;
+        margin-top: -15rem;
+        transition: all ease 1s;
+  
+        .sliderimages.active {
+          transform: scale(1); /* Increase size of active image */
+        }
+      }
+      .sliderimages {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        margin: 1.5rem auto;
+        display: flex;
+        // border-radius: 0.2rem;
+        // border: 1px solid seagreen;
+        object-fit: cover;
+        transition: all 1s ease;
+        position: relative;
+      }
+    }
+  
+    .buttons {
+      position: absolute;
+      top: 22rem;
+      left: 1rem;
+  
+      span {
+        position: absolute;
+        height: 2.1rem;
+        width: 0.01rem;
+        background-color: aliceblue;
+        right: 3rem;
+      }
+  
+      button {
+        background-color: seagreen;
+        z-index: 9999;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+      }
+  
+      .slidericon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        padding: 0;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 430px) {
+  .slider {
+    position: relative;
+    width: 100%;
+
+    // border: 1px solid red;
+    padding: 1.5rem;
+    height: 14rem;
+    // border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+
+    .img {
+      overflow: hidden;
+      height: 6rem;
+      width: 250%;
+      // margin-left: 2rem;
+      z-index: 999;
+      // transform: translateX(0);
+      // transition: all ease 1.7s;
+
+      &.active {
+        overflow: hidden;
+        // transform: translateX(10rem);
+        // transition: all ease 1.7s;
+        // z-index: 99999;
+        // border: 1px solid red;
+
+      }
+    }
+
+    .container {
+      // border: 1px solid red;
+      width: 100%;
+      .imagecontainer {
+        height: 150px;
+        width: 100%;
+
+        display: flex;
+        margin-top: -9rem;
+        transition: all ease 1s;
+
+        .sliderimages.active {
+          transform: scale(1); /* Increase size of active image */
+        }
+      }
+      .sliderimages {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        margin: 2rem auto;
+        display: flex;
+        border-radius: 0.1rem;
+        // border: 1px solid seagreen;
+        object-fit: cover;
+        transition: all 2s ease;
+        position: relative;
+
+        &.active {
+          // background-color: yellow;
+          height: 9rem;
+          // transform: translateX(1rem);
+
+          animation: slideRight 1.5s ease-in-out;
+
+          @keyframes slideRight {
+            from {
+              border: 10px solid yellow;
+            }
+            to {
+              // transform: translateX(10%);
+              border: 100px solid yellow;
+            }
+          }
+        }
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      top: 11rem;
+      left: -2rem;
+      z-index: 99;
+
+      span {
+        // border: 1px solid red;
+      }
+
+      button {
+        // border: 1px solid red;
+      }
+
+      .slidericon {
+        // border: 1px solid red;
+      }
+    }
+  }
+}
