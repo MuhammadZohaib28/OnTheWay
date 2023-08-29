@@ -22,17 +22,17 @@ const Franchise = () => {
 
     if (currentScrollY > prevScrollY) {
       // Scrolling down
-      if (currentScrollY > 2500) setActive(true);
-      if (currentScrollY > 3400) setActive2(true);
-      if (currentScrollY > 3700) setActive3(true);
+      if (currentScrollY > 2100) setActive(true);
+      if (currentScrollY > 2700) setActive2(true);
+      if (currentScrollY > 3100) setActive3(true);
       if (currentScrollY > 1900) setActive4(true);
       if (currentScrollY > 4100) setActive5(true);
     } else {
       // Scrolling up
       // if (currentScrollY <= 1800) setActive4(false);
-      if (currentScrollY <= 3700) setActive3(false);
-      if (currentScrollY <= 3400) setActive2(false);
-      if (currentScrollY <= 2500) setActive(false);
+      if (currentScrollY <= 3100) setActive3(false);
+      if (currentScrollY <= 2700) setActive2(false);
+      if (currentScrollY <= 2100) setActive(false);
     }
 
     setPrevScrollY(currentScrollY);
@@ -75,7 +75,10 @@ const Franchise = () => {
         <div className="licontainer">
           <div className="listcontainer">
             <span className={active ? "active" : ""}>Futuristic Retail</span>
-            <li className={active ? "active" : ""}>
+            <li
+              className={active ? "active" : ""}
+              style={{ backgroundColor: "#2e8b5650" }}
+            >
               Offer customers an unmatched, AI-driven shopping experience that
               is redefining industry standards.
             </li>
@@ -83,7 +86,10 @@ const Franchise = () => {
 
           <div className="listcontainer">
             <span className={active2 ? "active" : ""}>End-to-End Support</span>
-            <li className={active2 ? "active" : ""}>
+            <li
+              className={active2 ? "active" : ""}
+              style={{ backgroundColor: "#ff45649f" }}
+            >
               From technology to training, receive holistic support to ensure
               your franchise's success.
             </li>
@@ -91,7 +97,10 @@ const Franchise = () => {
 
           <div className="listcontainer">
             <span className={active3 ? "active" : ""}>Expansive Growth</span>
-            <li className={active3 ? "active" : ""}>
+            <li
+              className={active3 ? "active" : ""}
+              style={{ backgroundColor: "#2e8b5650" }}
+            >
               Position yourself at the forefront of an industry trend with vast
             </li>
           </div>
@@ -100,7 +109,10 @@ const Franchise = () => {
 
       {/* <img src={background} alt="" className="bg" /> */}
       {/* <img src={backgroundmobile} alt="" className="bgmobile" /> */}
-      <h1>Book a franchise</h1>
+      <h1>
+        {" "}
+        <span className="book">Book</span> a franchise
+      </h1>
       {/* <img src={border} alt="" className="border"/> */}
 
       <form

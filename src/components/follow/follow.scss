@@ -187,8 +187,19 @@
   
     h1 {
       width: 100%;
+      // font-size: 2rem;
+      color: white;
       font-size: 2rem;
+      font-weight: 600;
       // border: 1px solid red;
+
+
+      .socials{
+        color: rgb(255, 90, 255);
+        font-weight: 700;
+        font-size: 2.4rem;
+
+      }
     }
   
     span {
@@ -216,10 +227,13 @@
   
       button {
         padding: 0.8rem;
-        background-color: #d9dbf1;
-        border-radius: 0.5rem;
+        background-color: rgb(19, 168, 51);
+        border-radius: 0.4rem;
         outline: none;
         border: none;
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
       }
     }
   }

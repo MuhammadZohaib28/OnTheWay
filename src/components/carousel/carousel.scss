@@ -5,34 +5,78 @@
   z-index: 999;
   height: 70vh;
 
+  .overlay{
+    position: fixed;
+  top: 1rem;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.5);
+  z-index: 1;
+  }
+
   .carouselcontainer {
     // border: 1px solid red;
-    width: 100%;
+    height: 540px;
+    width: 780px;
+    position: absolute;
+    top: -7rem;
+    left: 10rem;
 
-    .carousel-arrow {
-      // border: 1px solid white;
-      color: aliceblue;
-      height: 2.5rem;
-      width: 2.5rem;
-      background-color: aliceblue;
+    
+      img{
+        
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    
+  }
+
+
+  .buttons{
+    position: absolute;
+    top: 30rem;
+    // border: 1px solid red;
+    color: white;
+    display: flex;
+    gap: 2rem;
+
+
+    span{
       position: absolute;
-      top: 17rem;
-
-      &.block {
-        // border: 3px solid seagreen;
-      }
-      &.carousel-next {
-        // border: 1px solid yellow;
-        // background-color: white;
-        position: absolute;
-        left: 3rem;
-        // bottom: 10rem;
-      }
+      width: 0.2rem;
+      height: 5rem;
+      background-color: white;
+      left: 5rem;
+      top: -0.5rem;
+      border-radius: 4rem;
     }
+
+    button{
+      
+      background-color: transparent;
+      color: white;
+      font-size: 4rem;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+
+
+    button:first-child{
+      color: seagreen;
+    }
+
+    button:last-child{
+      color: rgb(255, 71, 102);
+    }
+
   }
 
   .img {
-    height: 14rem;
+    height: 18rem;
     width: 100%;
     // border: 1px solid red;
 
@@ -56,50 +100,77 @@
         width: 100%;
         position: relative;
         z-index: 999;
-        height: 50vh;
+        height: 55vh;
         overflow: hidden;
       
         .carouselcontainer {
-        //   border: 1px solid red;
-          width: 100%;
-          height: 100%;
+          // border: 1px solid red;
+          height: 450px;
+          width: 300px;
+          position: absolute;
+          top: -3rem;
+          left: 0rem;
       
-          .carousel-arrow {
-            // border: 1px solid white;
-            color: aliceblue;
-            height: 2.5rem;
-            width: 2.5rem;
-            background-color: seagreen;
+          
+            img{
+              
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+            }
+          
+        }
+      
+      
+        .buttons{
+          position: absolute;
+          top: 20rem;
+          // border: 1px solid red;
+          color: white;
+          display: flex;
+          gap: 2rem;
+      
+      
+          span{
             position: absolute;
-            top: 21rem;
-            
-            .carousel-prev::before{
-                color: rgb(255, 0, 0);
-            }
-      
-            &.block {
-              // border: 3px solid seagreen;
-            }
-            &.carousel-next {
-              // border: 1px solid yellow;
-              // background-color: white;
-              position: absolute;
-              left: 3rem;
-              background-color: rgb(255, 111, 135);
-              // bottom: 10rem;
-            }
+            width: 0.2rem;
+            height: 3rem;
+            background-color: white;
+            left: 3.9rem;
+            top: 0rem;
+            border-radius: 4rem;
           }
+      
+          button{
+            
+            background-color: transparent;
+            color: white;
+            font-size: 3rem;
+            outline: none;
+            border: none;
+            cursor: pointer;
+          }
+      
+      
+          button:first-child{
+            color: seagreen;
+          }
+      
+          button:last-child{
+            color: rgb(255, 71, 102);
+          }
+      
         }
       
         .img {
-          height: 20rem;
+          height: 15rem;
           width: 240%;
         //   border: 1px solid red;
           overflow: hidden;
       
           position: absolute;
           z-index: -1;
-          top: 2rem;
+          top: 3.5rem;
           // transform: translateX(0);
           transition: all ease 1s;
       

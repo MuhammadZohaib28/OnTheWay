@@ -55,32 +55,26 @@
 
 // export default Carousel;
 
-import React, {useEffect, useState } from "react";
-import Slider from "react-slick";
+import React, { useEffect, useState } from "react";
 import data from "../slider/Data";
-import CarouselCard from "./carouselCard/CarouselCard";
 import line from "../../assets/line.png";
 import "./carousel.scss";
+import { HiArrowLongLeft } from "react-icons/hi2";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const Carousel = () => {
   const [active, setActive] = useState(false);
   const [marginLeft, setMarginLeft] = useState(80);
+  const [currSlide, setCurrSlide] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    setCurrSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
 
   const handleScroll = () => {
     // Calculate margin-left based on scroll position
@@ -91,6 +85,15 @@ const Carousel = () => {
     setActive(window.scrollY > 1300);
     setActive2(window.scrollY > 1300);
   };
+
+  const goToPrevSlide = () => {
+    setCurrSlide((prev) => (prev === 0 ? data.length - 1 : prev - 1));
+  };
+
+  const goToNextSlide = () => {
+    setCurrSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <div>
       <div className="carousel">
@@ -101,11 +104,17 @@ const Carousel = () => {
         />
 
         <div className="carouselcontainer">
-          <Slider {...settings}>
-            {data.map((image) => {
-              return <CarouselCard item={image} key={image.id} />;
-            })}
-          </Slider>
+          <img src={data[currSlide]} alt="" className="sliderimages" />
+        </div>
+
+        <div className="buttons">
+          <button onClick={goToPrevSlide}>
+            <HiArrowLongLeft />
+          </button>
+          <span />
+          <button onClick={goToNextSlide}>
+            <HiArrowLongRight />
+          </button>
         </div>
       </div>
     </div>
@@ -113,3 +122,29 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
+//   return (
+//     <div className="slider">
+//       <div className="container">
+//         <img src={data[currSlide]} alt=""  className="sliderimages" />
+//         <div className="buttons">
+//           <button onClick={goToPrevSlide}>
+//             <img src={backward} className="slidericon" />
+//           </button>
+//           <button onClick={handlePause}>
+//             {isPaused ? (
+//               <img src={pause} className="slidericon pause" />
+//             ) : (
+//               <img src={play} className="slidericon" />
+//             )}
+//           </button>
+//           <button onClick={goToNextSlide}>
+//             <img src={forward} className="slidericon" />
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Slider;

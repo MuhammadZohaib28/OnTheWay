@@ -523,17 +523,19 @@
     }
 
     h1 {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      word-break: break-word;
-      font-weight: 400;
-      font-style: normal;
+      width: 100%;
+      text-align: start;
+      font-size: 4rem;
+      font-weight: 700;
+      margin-top: 7rem;
+      text-transform: capitalize;
 
-      color: #ffffff;
-      font-size: 48px;
-      letter-spacing: 0em;
-      line-height: 1.2;
+      .book{
+        color: rgb(255, 55, 89);
+      }
+
     }
+
 
     .form {
       // border: 1px solid red;
@@ -588,12 +590,15 @@
 
 @media (max-width: 430px) {
   .franchise {
-    padding: 13rem 1.5rem;
+    padding: 5rem 1rem;
     gap: 2rem;
     position: relative;
     .points {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
       gap: 2rem;
       z-index: 99999;
 
@@ -603,8 +608,8 @@
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         visibility: hidden;
         font-size: 2.2rem;
 
@@ -719,6 +724,7 @@
       .licontainer {
         width: 100%;
         margin: 2rem auto;
+       
         // border: 1px solid red;
         color: white;
         display: flex;
@@ -729,6 +735,7 @@
 
         .listcontainer {
           margin-top: 10rem;
+          
           span {
             font-size: 0.014rem;
             transform: translateX(500rem);
@@ -743,7 +750,7 @@
           }
           li {
             list-style: none;
-            border: 1px solid whitesmoke;
+            border: 0.5px solid whitesmoke;
             color: white;
             padding: 0.4rem;
             font-weight: 500;
@@ -754,11 +761,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            // background-color: #ff45649f;
 
             &.active {
               transform: translateX(0rem);
               transition: all ease 1.7s;
-              border: 2px solid rgb(255, 255, 255);
+              border: 0.5px solid rgb(255, 255, 255);
             }
           }
         }
@@ -786,32 +794,8 @@
       }
     }
 
-    .border {
-      position: absolute;
-      top: 18rem;
-      left: 0;
-      width: 100%;
-      background-color: black;
-      z-index: 1;
-      background: transparent;
-    }
 
-    .bgmobile {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: -10rem;
-      left: 0;
-    }
-
-    .bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: -10rem;
-      left: 0;
-      display: none;
-    }
+    
 
     .images {
       // border: 1px solid red;
@@ -862,7 +846,15 @@
 
     h1 {
       width: 100%;
-      font-size: 2.5rem;
+      text-align: start;
+      font-size: 3rem;
+      font-weight: 700;
+      text-transform: capitalize;
+
+      .book{
+        color: rgb(255, 55, 89);
+      }
+
     }
 
     .form {
@@ -875,7 +867,7 @@
       gap: 1rem;
       margin: 2rem auto;
 
-      bbutton {
+      button {
         border: 1px solid seagreen;
         padding: 0.4rem 1rem;
         font-weight: 700;
@@ -883,7 +875,7 @@
         border-radius: 0.3rem;
 
         &:hover {
-          background-color: yellow;
+          background-color: rgb(255, 70, 70);
           padding: 0.4rem 1rem;
           border-radius: 0.3rem;
           color: black;

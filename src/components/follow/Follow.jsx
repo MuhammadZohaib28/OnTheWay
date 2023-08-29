@@ -4,7 +4,7 @@ import "./follow.scss";
 const Follow = () => {
   return (
     <div className="follow">
-      <h1>Follow us on our socials</h1>
+      <h1>Follow us on our <span className="socials">socials</span></h1>
 
       <span>
         Subscribe to our newsletter for exclusive promos, updates, and all
