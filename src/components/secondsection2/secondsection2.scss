@@ -1,0 +1,90 @@
+.secondsection2 {
+  background-color: black;
+  color: wheat;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+
+    .spancontainer {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .horizontalscrollcarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+
+    .horizontalscrollcarouselspan {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.horizontalscrollcarousel {
+  position: relative;
+  height: 300vh;
+
+  .horizontalscrollcarouselcontainer {
+    display: flex;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid red;
+
+    .carditem {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+  width: 450px;
+
+  .cardimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-duration: 300ms;
+  }
+
+  .cardcontainer {
+    display: grid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    place-content: center;
+
+    .p{
+        padding: 2rem; 
+font-size: 3.75rem;
+line-height: 1; 
+font-weight: 900; 
+color: #ffffff; 
+text-transform: uppercase; 
+background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); 
+backdrop-blur: blur(16px); 
+    }
+  }
+}
